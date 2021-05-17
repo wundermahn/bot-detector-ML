@@ -1,20 +1,7 @@
-# bot-detector-ML
+# To Do
 
-
-## setup
-```
-python -m venv venv
-venv\Scripts\activate
-python -m pip install --upgrade pip
-pip install -r requirements.txt
-```
-# for admin purposes saving & upgrading
-
-```
-venv\Scripts\activate
-call pip freeze > requirements.txt
-powershell "(Get-Content requirements.txt) | ForEach-Object { $_ -replace '==', '>=' } | Set-Content requirements.txt"
-call pip install -r requirements.txt --upgrade
-call pip freeze > requirements.txt
-powershell "(Get-Content requirements.txt) | ForEach-Object { $_ -replace '>=', '==' } | Set-Content requirements.txt"
-```
+* Create gridsearch and bayesian search examples for models
+* Automate "best model" determination
+* Test ensemble of top-n models vs individual performance
+* Create ovr SVMs
+* Compare tuned vs untuned for performance changes
